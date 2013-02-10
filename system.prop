@@ -1,17 +1,28 @@
+windowsmgr.max_events_per_sec=275
 #
 # system.prop for i9305
 #
-
-rild.libpath=/system/lib/libril-qc-qmi-1.so
+## cannot take spaces
 rild.libargs=-d /dev/ttyS0
-ro.sf.lcd_density=320
-ro.lcd_min_brightness=20
 
-# System property ril adb log on
+# Fields For Custom RIL
+rild.libpath=/system/lib/libril-qc-qmi-1.so
+ro.lcd_min_brightness=20
+ro.sf.lcd_density=320
+
+# System Property RIL Log On
 persist.radio.adb_log_on=1
 
-# For sys info indication
+# For System Info Indication
 persist.radio.add_power_save=1
 
-# System property for SIM
+# System Property For SIM
 persist.radio.apm_sim_not_pwdn=1
+
+# Fields For VM Heapsize
+dalvik.vm.heapsize=512m
+dalvik.vm.heapmaxfree=8m
+dalvik.vm.heapminfree=512k
+dalvik.vm.heapstartsize=32m
+dalvik.vm.heapgrowthlimit=256m
+dalvik.vm.heaputilization=0.75
