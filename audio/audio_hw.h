@@ -32,8 +32,8 @@
 #define PLAYBACK_PERIOD_COUNT 8
 #define PLAYBACK_SHORT_PERIOD_COUNT 2
 
-#define CAPTURE_PERIOD_SIZE   1056
-#define CAPTURE_PERIOD_COUNT  2
+#define CAPTURE_PERIOD_SIZE   1024
+#define CAPTURE_PERIOD_COUNT  4
 
 #define SHORT_PERIOD_SIZE 192
 
@@ -188,7 +188,6 @@ struct route_setting voicecall_default_disable[] = {
 
 struct route_setting default_input[] = {
     { .ctl_name = "Main Mic Switch", .intval = 1, },
-    { .ctl_name = "MainMicBias Mode", .intval = 1, },
     { .ctl_name = "IN2L Volume", .intval = 28, },
     { .ctl_name = "MIXINL IN2L Switch", .intval = 1, },
     { .ctl_name = "MIXINL IN2L Volume", .intval = 0, },

@@ -77,7 +77,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.ril.hsxpa=1 \
     ro.ril.gprsclass=10 \
     telephony.lteOnGsmDevice=1 \
-    ro.telephony.ril_class=SamsungQualcommD2RIL \
+    ro.telephony.ril_class=SamsungQualcommM3RIL \
     mobiledata.interfaces=pdp0,wlan0,gprs,ppp0
 
 # These are the hardware-specific features

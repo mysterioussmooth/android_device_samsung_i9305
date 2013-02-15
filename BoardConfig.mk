@@ -17,6 +17,8 @@
 
 -include device/samsung/smdk4412-common/BoardCommonConfig.mk
 
+LOCAL_PATH := device/samsung/i9305
+
 # Bluetooth
 BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := $(LOCAL_PATH)/bluetooth
 
@@ -29,6 +31,7 @@ COMMON_GLOBAL_CFLAGS += -DCAMERA_WITH_CITYID_PARAM
 # Kernel
 TARGET_KERNEL_SOURCE := kernel/samsung/smdk4412
 TARGET_KERNEL_CONFIG := cyanogenmod_i9305_defconfig
+TARGET_KERNEL_CUSTOM_TOOLCHAIN := arm-eabi-4.6
 
 # assert
 TARGET_OTA_ASSERT_DEVICE := m3,m3xx,i9305,GT-I9305
